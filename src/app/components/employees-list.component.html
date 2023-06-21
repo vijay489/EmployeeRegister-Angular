@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div class="list row">
+<div class="col-md-6">
+  <h4>Employee List</h4>
+  <ul class="list-group">
+    <li
+      class="list-group-item"
+      *ngFor="let employee of employees.employeeList; let i = index"
+      [class.active]="i == currentIndex"
+      (click)="setActiveEmployee(employee, i)"
+    >
+
+      <div>
+        <div>
+          <span><strong>Employee ID:</strong></span>{{ employee.id }}
+          <span><strong>Name:</strong></span> {{ employee.firstName }}{{ employee.lastName }}
+          <span><strong>Email:</strong></span>{{ employee.email }}
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+</div>
+</body>
+</html>

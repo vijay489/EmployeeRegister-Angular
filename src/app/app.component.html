@@ -1,0 +1,24 @@
+<img src= "assets/Logo.png" class="center" width="200" height="80" display:block>
+<h1 style="text-align: center;">Hello! Welcome to the {{name}} tutorial</h1>
+<h2 style="text-align: center;">Welcome to the {{topic}} tutorial</h2>
+<!-- <input [(ngModel)] = "random" type="text"/><br/> -->
+
+
+<div>
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <a href="#" class="navbar-brand">bezKoder</a>
+    <div class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a routerLink="Employees" class="nav-link">Employees</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="AddEmployee" class="nav-link">Add Employee</a>
+      </li>
+    </div>
+  </nav>
+
+  <div class="container mt-3">
+    <router-outlet></router-outlet>
+  </div>
+
+</div>
